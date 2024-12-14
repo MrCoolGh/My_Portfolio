@@ -760,6 +760,9 @@ button.btn:hover{
     .home-content h1 {
         font-size: 52px;
     }
+    .home{
+        font-size: 15px;
+    }
 
     .education{
         padding: 100px 4% 50px 5%;
@@ -781,6 +784,8 @@ button.btn:hover{
 
 @media (max-width: 371px){
     .home{
+        margin-top: 70px;
+        font-size: 10px;
         justify-content: center;
     }
 
