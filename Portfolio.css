@@ -528,14 +528,6 @@ button.btn:hover{
 
 
 
-
-.left-slide{
-    animation: slideright 2s ease forwards;
-}
-.right-slide{
-    animation: slideleft 2s ease forwards;
-}
-
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width: 90%;
 }
@@ -591,25 +583,6 @@ button.btn:hover{
 @keyframes animate{
     100%{
         transform: scaleX(1);
-    }
-}
-
-
-@keyframes slidebuttom{
-    0%{
-        transform: translateY(100%);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
-
-@keyframes slidetop{
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(0);
     }
 }
 
