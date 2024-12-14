@@ -19,7 +19,9 @@
 
 html{
     font-size: 62.5%;
+    scroll-padding-top: 70px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -38,6 +40,12 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+}
+
+.header.sticky{
+    padding: 15px 10%;
+    background: #081b29;
 }
 
 #menu-icon{
@@ -77,6 +85,8 @@ body{
 }
 
 .home{
+    margin-top: 70px;
+    justify-content: space-between;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -94,7 +104,7 @@ body{
     font-weight: 700;
     color: #00abf0;
     line-height: 1.2;
-    animation: slideright 1s ease forwards;
+    animation: slidetop 2s ease forwards;
 }
 
 .home-content p{
@@ -183,7 +193,7 @@ body{
     text-decoration: none;
     font-size: 30px;
     font-weight: 600;
-    animation: slideright 1s ease forwards;
+    animation: slidetop 2s ease forwards;
 }
 .logo:hover{
     color: #00aaef;
@@ -336,6 +346,7 @@ span{
     padding-top: 3px;
 }
 
+
 .education-content p{
     font-size: 17px;
     padding-top: 8px;
@@ -348,6 +359,8 @@ span{
 .education-column .title{
     font-size: 30px;
     margin: 0 0 15px ;
+    animation: slidetop 3s ease forwards;
+
 }
 
 .year i{
@@ -388,6 +401,7 @@ span{
 .skills-column .title{
     font-size: 30px;
     margin: 0 0 15px;
+    animation: slidetop 3s ease forwards;
 }
 
 .progress{
@@ -430,7 +444,7 @@ span{
 
 .contact{
     min-height: auto;
-    padding: 50px 150px 20px;
+    padding-bottom: 70px;
 }
 
 .contact form{
@@ -528,6 +542,14 @@ button.btn:hover{
 
 
 
+
+.left-slide{
+    animation: slidetop 1s ease forwards;
+}
+.right-slide{
+    animation: slidetop 1s ease forwards;
+}
+
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width: 90%;
 }
@@ -583,6 +605,25 @@ button.btn:hover{
 @keyframes animate{
     100%{
         transform: scaleX(1);
+    }
+}
+
+
+@keyframes slidebuttom{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slidetop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 
