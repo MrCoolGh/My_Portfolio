@@ -83,14 +83,101 @@ body{
 .navbar a:active{
     opacity: 0.5;
 }
+/*TOP IS FOR THE NAVBAR ALONE*/
 
+.about-content h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #00aaef;
+    animation: slidetop 2s ease forwards;
+}
+
+.about-content .btn-box{
+    margin-top: 20px;
+
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    margin: 15px 15px 20px 0;
+    animation: slidebuttom 2s ease forwards;
+}
+
+.social-box {
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.home-sci a:hover{
+    background: #00abf0;
+    box-shadow: 0 0 10px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0;
+}
+.home-sci a:active{
+    opacity: 0.5;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 15px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    color: #ffffff;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    animation: slidebuttom 3s ease forwards;
+}
+
+.btn:hover{
+    background: #00aaef;
+    box-shadow: 0 0 10px #00aaef, 0 0 40px #00aaef, 0 0 80px #00aaef;
+}
+.btn:active{
+    opacity: 0.5;
+}
+
+.logo{
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    animation: slidetop 2s ease forwards;
+}
+.logo:hover{
+    color: #00aaef;
+}
+
+
+/*NO HOME CC NOT USING */
 .home{
-    margin-top: 70px;
+    margin-top: 100px;
     justify-content: space-between;
-    height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 50px 10% 50px;
     background-size: cover;
     background: url(img/home.jpg) no-repeat center;
 }
@@ -129,75 +216,7 @@ body{
     color: #00aaef;
 }
 
-.home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: 2px solid #00abf0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 0.3s;
-    margin: 15px 15px 20px 0;
-    animation: slidebuttom 2s ease forwards;
-}
 
-.home-sci a:hover{
-    background: #00abf0;
-    box-shadow: 0 0 10px #00abf0, 0 0 40px #00abf0, 0 0 80px #00abf0;
-}
-.home-sci a:active{
-    opacity: 0.5;
-}
-
-.home-content .btn-box{
-    position: relative;
-    justify-content: space-between;
-    width: 350px;
-    height: 50px;
-    display: flex;
-}
-.btn{
-    display: inline-block;
-    text-decoration: none;
-    padding: 15px 15px;
-    background: transparent;
-    border: 2px solid #00abf0;
-    color: #ffffff;
-    border-radius: 100px;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 0;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transition: 0.3s;
-    animation: slidebuttom 3s ease forwards;
-}
-
-.btn:hover{
-    background: #00aaef;
-    box-shadow: 0 0 10px #00aaef, 0 0 40px #00aaef, 0 0 80px #00aaef;
-}
-.btn:active{
-    opacity: 0.5;
-}
-
-.logo{
-    position: relative;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 600;
-    animation: slidetop 2s ease forwards;
-}
-.logo:hover{
-    color: #00aaef;
-}
 
 .about{
     display: flex;
@@ -444,7 +463,8 @@ span{
 
 .contact{
     min-height: auto;
-    padding-bottom: 70px;
+    padding: 50px 10% 50px;
+
 }
 
 .contact form{
@@ -490,6 +510,12 @@ span{
 
 .contact form .textarea-field textarea {
     resize: none;
+}
+
+.contact .home-sci {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 button.btn:hover{
@@ -672,6 +698,29 @@ button.btn:hover{
 
 
 
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+        padding: 20px 4%;
+    }
+
+    section{
+        padding: 100px 4% 20px;
+    }
+
+    .home{
+        padding: 0 4%;
+    }
+
+    .footer {
+        padding: 20px 4%;
+    }
+}
 
 @media (max-width: 768px) {
     .header {
@@ -713,100 +762,59 @@ button.btn:hover{
     }
 }
 
-@media (max-width: 1100px) {
-    .header {
-        padding:2rem 4%
-    }
-
-    section {
-        padding: 10rem 4% 2rem
-    }
-
-    .home {
-        padding: 0 4%
-    }
-
-    .footer {
-        padding: 2rem 4%
-    }
-
-
-@media (max-width: 910px) {
-    .header,.navbar {
-        background:transparent
-    }
-
-    .navbar {
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding-left: 1rem 4%;
-        padding-top: -8rem 4%
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center
-    }
-}
-
-@media (max-width: 650px) {
+@media (max-width: 520px){
     html {
-        font-size:50%
+        font-size: 50%;
     }
 
-    .home {
-        background-image: none
-    }
-
-    .home-content h1 {
+    .home-content h1{
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
 
-    .home-sci {
-        width: 160px
+    .home-sci{
+        width: 160px;
     }
 
     .home-sci a {
         width: 38px;
-        height: 38px
+        height: 38px;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 462px){
     .home-content h1 {
-        font-size:5.2rem
+        font-size: 52px;
     }
 
-    .contact form .input-box .input-field {
-        width: 100%
+    .education{
+        padding: 100px 4% 50px 5%;
     }
 
-    .footer {
-        flex-direction: column-reverse
+    .contact form .input-box .input-field{
+        width: 100%;
     }
 
-    .footer p {
-        margin-top: 2rem
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        margin-top: 20px;
+        text-align: center;
     }
 }
 
-@media (max-width: 420px) {
-    .home {
-        justify-content:center
+@media (max-width: 371px){
+    .home{
+        justify-content: center;
     }
 
-    .home-content {
+    .home-content{
         display: flex;
         align-items: center;
+        text-align: center;
         flex-direction: column;
-        text-align: center
-    }
-
-    .home-content h1 {
-        font-size: 5rem
     }
 }
 
