@@ -273,7 +273,6 @@ span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #021c29;
     min-height: auto;
     padding: 50px 10% 50px;
 }
@@ -346,6 +345,11 @@ span{
     box-shadow: 0 0 10px #61aefd, 0 0 40px #61aefd, 0 0 80px #61aefd;
 }
 
+.education-column .title{
+    font-size: 30px;
+    margin: 0 0 15px ;
+}
+
 .year i{
     color: #ffffff;
     font-size: 17px;
@@ -357,6 +361,172 @@ span{
     font-size: 15px;
     font-style: italic;
 }
+
+.skills{
+    min-height: auto;
+    padding: 50px 10% 50px;
+    background: #112e42;
+}
+
+.skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.skills-column{
+    flex: 1 1 400px;
+}
+
+.skills-content{
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #00aaef;
+    padding: 5px 15px
+}
+
+.skills-column .title{
+    font-size: 30px;
+    margin: 0 0 15px;
+}
+
+.progress{
+    padding: 10px 0;
+}
+
+.progress h3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress span{
+    color: white;
+    font-size: 18px;
+}
+
+.progress .bar {
+    height: 25px;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.progress .bar span{
+    height: 100%;
+    display: block;
+    background: #00aaef;
+    border-radius: 3px;
+}
+
+.progress .bar span:hover{
+    background-color: white;
+}
+
+.progress .bar:hover{
+    box-shadow: 0 0 10px #61aefd, 0 0 40px #61aefd, 0 0 80px #61aefd;
+}
+
+.contact{
+    min-height: auto;
+    padding: 50px 150px 20px;
+}
+
+.contact form{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: 8px 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid #00aaef;
+    border-radius: 6px;
+    background: transparent;
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: #ffffff;
+}
+
+.contact form .textarea-field{
+    position: relative;
+    margin: 8px 0 27px;
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+button.btn:hover{
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 9%;
+    background: #112e42;
+}
+
+.footer-content p{
+    font-size: 16px;
+}
+
+.footer-icontop a{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    border-radius: 20%;
+}
+
+.footer-icontop a i{
+    color: #00aaef;
+    font-size: 24px;
+}
+
+.footer-icontop{
+    border-radius: 20%;
+    animation: slidetop 2s ease forwards;
+}
+
+.footer-icontop:hover{
+    box-shadow: 0 0 10px #00aaef, 0 0 40px #00aaef, 0 0 80px #00aaef;
+}
+.footer-icontop:active{
+    opacity: 0.5;
+}
+
+
+
+
+
 
 
 .left-slide{
@@ -424,14 +594,7 @@ span{
     }
 }
 
-@keyframes slideleft{
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
+
 @keyframes slidebuttom{
     0%{
         transform: translateY(100%);
@@ -440,14 +603,7 @@ span{
         transform: translateY(0);
     }
 }
-@keyframes slideright{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
+
 @keyframes slidetop{
     0%{
         transform: translateY(-100%);
